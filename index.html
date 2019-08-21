@@ -5,8 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>My Portfolio</title>
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146050145-1"></script>
   <script>
@@ -16,9 +14,10 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
     gtag('config', 'UA-146050145-1');
   </script>
+  <title>My Portfolio</title>
+
 
   <link rel="stylesheet" href="assets/css/reboot.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -27,11 +26,11 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
   <header>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-light scrolling-navbar">
-      <a class="navbar-brand text-white" style="background-color: #4aaaa5" href="index.html">
-        Tracy Nguyen
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light scrolling-navbar pt-md-3 mx-md-4 bg-white">
+      <a class="navbar-brand text-info" href="index.html">
+        traCySS
       </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -55,15 +54,60 @@
     </nav>
   </header>
 
-  <main role="main" class="container mt-5">
-    <article class="row bg-light">
+  <main role="main" class="container-fluid bg-secondary">
+    <article class="row mt-sm-4">
+      <div class="col-sm-12 text-center p-md-4">
+        <img class="img-fluid" src="assets/images/My-Profle-Pic.png" alt="Tracy Profile Picture">
+        <p class="lead" id="welcome">Hello!</p>
+        <h3>My name is <strong>Tracy Nguyen</strong></h3>
+        <h4>Welcome to my portfolio</h4>
+
+      </div>
+    </article>
+
+    <article class="row">
       <div class="col-sm-12">
-        <img class="img-fluid float-left py-3 pr-3" width="30%" src="assets/images/My-Profle-Pic.png" alt="sorry!">
+        <section class="row text-center">
+          <div class="col-md-2 col-lg-4">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleButter">
+              <img src="assets/images/buttter.jpg" alt="">
+            </button>
+            <div class="modal fade" id="exampleButter" tabindex="-1" role="dialog" aria-labelledby="exampleModalTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      meowwww
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-2 col-lg-4">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Launch demo modal
+            </button>
+          </div>
+          <div class="col-md-2 col-lg-4">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Launch demo modal
+            </button>
+          </div>
+        </section>
       </div>
     </article>
   </main>
 
-  <footer class="page-footer fixed-bottom">
+  <footer class="page-footer fixed-bottom bg-white">
     <div class="footer-copyright text-center">
       <p class="text-secondary-50 pt-3">Copyright &copy;</p>
     </div>
