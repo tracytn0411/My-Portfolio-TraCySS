@@ -3,74 +3,82 @@
 
 <head>
   <meta charset="UTF-8">
+  <title>My Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146050145-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
     gtag('config', 'UA-146050145-1');
   </script>
-  <title>My Portfolio</title>
 
 
   <link rel="stylesheet" href="assets/css/reboot.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/tracy.css">
 </head>
 
 <body class="d-flex flex-column h-100">
-  <header>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-light scrolling-navbar pt-md-3 mx-md-4 bg-white">
-      <a class="navbar-brand text-info" href="index.html">
-        traCySS
-      </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-------------Navigation Bar--------------------->
+  <nav class="navbar fixed-top navbar-expand-sm navbar-light scrolling-navbar pt-md-3 mx-md-4 bg-white">
+    <a class="navbar-brand text-info" href="index.html">
+      traCySS
+    </a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedConetnt">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutme.html">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedConetnt">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutme.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!----------------Profile Header-------------->
+  <div class="main container-fluid bg-light">
+    <header class="row align-items-center justify-content-center">
+      <div class="col-sm-5 text-center p-md-4 animated slideInLeft">
+        <img class="img-fluid " src="assets/images/My-Profle-Pic.png" alt="Tracy Profile Picture">
+        
       </div>
-    </nav>
-  </header>
-
-  <main role="main" class="container-fluid bg-light">
-    <article class="row mt-sm-4">
-      <div class="col-sm-12 text-center p-md-4">
-        <img class="img-fluid" src="assets/images/My-Profle-Pic.png" alt="Tracy Profile Picture">
-        <p class="lead" id="welcome">Hello!</p>
-        <h3>My name is <strong>Tracy Nguyen</strong></h3>
-        <h4>Welcome to my unfinished portfolio :)</h4>
-
+      <div class="col-sm-5">
+        <h3 class="animated slideIn" id="welcome">Hello!</h3>
+        <p class="lead animated fadeIn">My name is <strong>Tracy Nguyen</strong></p>
+        <p class="lead animated delay-4s fadeIn">I'm a Full-Stack Web Developer <span class="animated fadeIn delay-6s text-info">(in the making)</span></p>
+        <p class="lead animated delay-5s fadeIn">Welcome to my unfinished portfolio :)</p>
       </div>
-    </article>
 
-    <article class="row">
-      <div class="col-sm-12">
-        <section class="row text-center">
-          <div class="col-md-2 col-lg-4">
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleButter">
-              <img src="assets/images/SouthPark Thumbnail.jpg" alt="">
+    </header>
+
+  <!---------------Projects Gallery------------->
+
+    <main class="row">
+      <div class="col-sm-10 mx-auto">
+
+        <div class="card-columns">
+
+          <!--Project 1: South Park Game-->
+          <div class="card">
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleButter">
+              <img class="img-fluid" src="assets/images/SP.jpg" alt="">
             </button>
             <div class="modal fade" id="exampleButter" tabindex="-1" role="dialog" aria-labelledby="exampleModalTitle" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -92,20 +100,140 @@
                 </div>
               </div>
           </div>
-          <div class="col-md-2 col-lg-4">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-              Launch demo modal
+
+          <!--Project 2: General Health Trivia-->
+          <div class="card">
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#Trivia1">
+              <img class="img-fluid" src="assets/images/Trivia1.jpg" alt="">
             </button>
+            <div class="modal fade" id="Trivia1" tabindex="-1" role="dialog" aria-labelledby="Trivia1ModalTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="Trivia1ModalTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      text
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
-          <div class="col-md-2 col-lg-4">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-              Launch demo modal
+
+
+          <!--Project 3: Silicon Valley-->
+          <div class="card">
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#SVModal">
+              <img class="img-fluid" src="assets/images/Trivia2 SV.jpg" alt="">
             </button>
+            <div class="modal fade" id="SVModal" tabindex="-1" role="dialog" aria-labelledby="SVModalTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="SVModalTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      text
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
-        </section>
+
+          <div class="card">
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#StarWarsModal">
+              <img class="img-fluid" src="assets/images/Star Wars.png" alt="">
+            </button>
+            <div class="modal fade" id="StarWarsModal" tabindex="-1" role="dialog" aria-labelledby="StarWarsModalTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="StarWarsModalTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      text
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="card">
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#CrystalCollectorModal">
+              <img class="img-fluid" src="assets/images/CrystalCollector.png" alt="">
+            </button>
+            <div class="modal fade" id="CrystalCollectorModal" tabindex="-1" role="dialog" aria-labelledby="CrystalModalTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="CrystalModalTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      text
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="card">
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#GifTasticModal">
+              <img class="img-fluid" src="assets/images/GifTastic.jpg" alt="">
+            </button>
+            <div class="modal fade" id="GifTasticModal" tabindex="-1" role="dialog" aria-labelledby="GifTasticModalTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="GifTasticModalTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      text
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+
+        </div>
       </div>
-    </article>
-  </main>
+    </main>
+  </div>
 
   <footer class="page-footer fixed-bottom bg-white">
     <div class="footer-copyright text-center">
