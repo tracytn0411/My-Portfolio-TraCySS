@@ -3,8 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
+  <meta name="description"
+  content="Full-Stack Web Developer (both Front-End and Back-End) Portfolio Website. Take a look at my recent projects along with useful tools that I used to build the website.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>My Portfolio - traCySS</title>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146050145-1"></script>
   <script>
@@ -16,12 +19,12 @@
     gtag('config', 'UA-146050145-1');
   </script>
 
-
   <link rel="stylesheet" href="assets/css/reboot.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <link rel="stylesheet" href="assets/css/tracy.css">
+  <script src="https://kit.fontawesome.com/57e1140738.js"></script>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -46,189 +49,34 @@
           <a class="nav-link" href="aboutme.html">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="ami.html">Design Tool</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <!----------------Profile Header-------------->
   <div class="main container-fluid bg-light">
+    <!----------------Profile Header-------------->
     <header class="row align-items-center justify-content-center">
       <div class="col-sm-5 text-center p-md-4 animated slideInLeft">
         <img class="img-fluid " src="assets/images/My-Profle-Pic.png" alt="Tracy Profile Picture">
-        
       </div>
       <div class="col-sm-5">
         <h3 class="animated slideIn" id="welcome">Hello!</h3>
         <p class="lead animated fadeIn">My name is <strong>Tracy Nguyen</strong></p>
-        <p class="lead animated delay-4s fadeIn">I'm a Full-Stack Web Developer <span class="animated fadeIn delay-6s text-info">(in the making)</span></p>
+        <p class="lead animated delay-4s fadeIn">I'm a Full-Stack Web Developer <span
+            class="animated fadeIn delay-6s text-info">(in the making)</span></p>
         <p class="lead animated delay-5s fadeIn">Welcome to my unfinished portfolio :)</p>
       </div>
-
     </header>
 
-  <!---------------Projects Gallery------------->
+    <!---------------Projects Gallery------------->
 
     <main class="row">
-      <div class="col-sm-10 mx-auto">
+      <div class="col-md-10 mx-auto">
+        <div class="card-columns" id="portfolioGallery">
 
-        <div class="card-columns">
-
-          <!--Project 1: South Park Game-->
-          <div class="card">
-            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleButter">
-              <img class="img-fluid" src="assets/images/SP.jpg" alt="">
-            </button>
-            <div class="modal fade" id="exampleButter" tabindex="-1" role="dialog" aria-labelledby="exampleModalTitle" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalTitle">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      text
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-          <!--Project 2: General Health Trivia-->
-          <div class="card">
-            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#Trivia1">
-              <img class="img-fluid" src="assets/images/Trivia1.jpg" alt="">
-            </button>
-            <div class="modal fade" id="Trivia1" tabindex="-1" role="dialog" aria-labelledby="Trivia1ModalTitle" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="Trivia1ModalTitle">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      text
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-
-          <!--Project 3: Silicon Valley-->
-          <div class="card">
-            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#SVModal">
-              <img class="img-fluid" src="assets/images/Trivia2 SV.jpg" alt="">
-            </button>
-            <div class="modal fade" id="SVModal" tabindex="-1" role="dialog" aria-labelledby="SVModalTitle" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="SVModalTitle">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      text
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-          <div class="card">
-            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#StarWarsModal">
-              <img class="img-fluid" src="assets/images/Star Wars.png" alt="">
-            </button>
-            <div class="modal fade" id="StarWarsModal" tabindex="-1" role="dialog" aria-labelledby="StarWarsModalTitle" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="StarWarsModalTitle">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      text
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-          <div class="card">
-            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#CrystalCollectorModal">
-              <img class="img-fluid" src="assets/images/CrystalCollector.png" alt="">
-            </button>
-            <div class="modal fade" id="CrystalCollectorModal" tabindex="-1" role="dialog" aria-labelledby="CrystalModalTitle" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="CrystalModalTitle">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      text
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-          <div class="card">
-            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#GifTasticModal">
-              <img class="img-fluid" src="assets/images/GifTastic.jpg" alt="">
-            </button>
-            <div class="modal fade" id="GifTasticModal" tabindex="-1" role="dialog" aria-labelledby="GifTasticModalTitle" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="GifTasticModalTitle">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      text
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          
+         <!--Gallery insert from main.js here-->
 
         </div>
       </div>
@@ -250,6 +98,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+
+  <script type="text/javascript" src="assets/javascript/main.js"></script>
+
 
 
 </body>

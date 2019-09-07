@@ -1,4 +1,6 @@
 .eslintrc.json
-assets/extra
 .vscode
 node_modules
+assets/extra
+assets/sass
+assets/css/tracy.css.map

@@ -16,7 +16,6 @@ div.card {
   margin: 0.25rem;
 }
 
-/**======BOOTSTRAP 4 MEDIA QUERIES MIXINS=============*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   .card-columns {
     column-count: 2;
@@ -27,7 +26,6 @@ div.card {
     column-count: 3;
   }
 }
-/**========ANIMATIONS SASS==============*/
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
