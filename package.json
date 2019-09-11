@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio-traCySS",
   "version": "1.0.0",
-  "description": "",
+  "description": "my portfolio website in trial",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +23,9 @@
     "popper.js": "^1.15.0"
   },
   "devDependencies": {
-    "animate-sass": "^0.8.2"
+    "animate-sass": "^0.8.2",
+    "critical": "^1.3.6",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1"
   }
 }

@@ -4,11 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description"
-  content="Full-Stack Web Developer (both Front-End and Back-End) Portfolio Website. Take a look at my recent projects along with useful tools that I used to build the website.">
+    content="Full-Stack Web Developer (both Front-End and Back-End) Portfolio Website. Take a look at my recent projects along with useful tools that I used to build the website.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>My Portfolio - traCySS</title>
-
+  <title>traCySS - Full Stack Web Developer Portfolio</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146050145-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -18,19 +16,18 @@
     gtag('js', new Date());
     gtag('config', 'UA-146050145-1');
   </script>
-
   <link rel="stylesheet" href="assets/css/reboot.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
   <link rel="stylesheet" href="assets/css/tracy.css">
-  <script src="https://kit.fontawesome.com/57e1140738.js"></script>
+
+  <script defer src="https://kit.fontawesome.com/57e1140738.js"></script>
 </head>
 
 <body class="d-flex flex-column h-100">
 
   <!-------------Navigation Bar--------------------->
-  <nav class="navbar fixed-top navbar-expand-sm navbar-light scrolling-navbar pt-md-3 mx-md-4 bg-white">
+  <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-white scrolling-navbar pt-md-3 mx-md-4">
     <a class="navbar-brand text-info" href="index.html">
       traCySS
     </a>
@@ -45,10 +42,10 @@
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item text-dark">
           <a class="nav-link" href="aboutme.html">About Me</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item text-dark">
           <a class="nav-link" href="ami.html">Design Tool</a>
         </li>
       </ul>
@@ -56,52 +53,48 @@
   </nav>
 
   <div class="main container-fluid bg-light">
+
     <!----------------Profile Header-------------->
     <header class="row align-items-center justify-content-center">
-      <div class="col-sm-5 text-center p-md-4 animated slideInLeft">
-        <img class="img-fluid " src="assets/images/My-Profle-Pic.png" alt="Tracy Profile Picture">
+      <div class="col-sm-5 text-center p-md-4">
+        <img class="img-fluid animated slideInLeft" src="assets/images/Profile Pic.webp" alt="Tracy Profile Picture">
       </div>
       <div class="col-sm-5">
-        <h3 class="animated slideIn" id="welcome">Hello!</h3>
-        <p class="lead animated fadeIn">My name is <strong>Tracy Nguyen</strong></p>
-        <p class="lead animated delay-4s fadeIn">I'm a Full-Stack Web Developer <span
-            class="animated fadeIn delay-6s text-info">(in the making)</span></p>
-        <p class="lead animated delay-5s fadeIn">Welcome to my unfinished portfolio :)</p>
+        <h3 id="welcome">Hello!</h3>
+        <p class="lead">My name is <strong>Tracy Nguyen</strong></p>
+        <p class="lead">I'm a Full-Stack Web Developer <span class="text-info">(in the making)</span></p>
+        <p class="lead">Welcome to my unfinished portfolio :)</p>
       </div>
     </header>
 
     <!---------------Projects Gallery------------->
-
     <main class="row">
       <div class="col-md-10 mx-auto">
-        <div class="card-columns" id="portfolioGallery">
-
-         <!--Gallery insert from main.js here-->
-
+        <div class="card-columns" id="portfolioGallery" style="display: none">
+          <!--Gallery insert from main.js here-->
         </div>
       </div>
     </main>
   </div>
 
+  <!------------Footer: copyright and social links------------->
   <footer class="page-footer fixed-bottom bg-white">
     <div class="footer-copyright text-center">
       <p class="text-secondary-50 pt-3">Copyright &copy;</p>
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-
-  <script type="text/javascript" src="assets/javascript/main.js"></script>
-
-
+  <script defer type="text/javascript" src="assets/javascript/main.min.js"></script>
 
 </body>
 

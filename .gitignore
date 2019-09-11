@@ -4,3 +4,7 @@ node_modules
 assets/extra
 assets/sass
 assets/css/tracy.css.map
+
+gulpfile.js
+
+assets/javascript/main.js
