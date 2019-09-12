@@ -27,7 +27,7 @@
 <body class="d-flex flex-column h-100">
 
   <!-------------Navigation Bar--------------------->
-  <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-white scrolling-navbar pt-md-3 mx-md-4">
+  <nav class="navbar fixed-top navbar-expand-sm navbar-light scrolling-navbar pt-md-3 mx-md-4">
     <a class="navbar-brand text-info" href="index.html">
       traCySS
     </a>
@@ -40,13 +40,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedConetnt">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link text-info" href="index.html">HOME</a>
         </li>
         <li class="nav-item text-dark">
-          <a class="nav-link" href="aboutme.html">About Me</a>
+          <a class="text-dark nav-link" href="aboutme.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-dark nav-link" href="">CONTACT</a>
         </li>
         <li class="nav-item text-dark">
-          <a class="nav-link" href="ami.html">Design Tool</a>
+          <a class="text-dark nav-link" href="ami.html">TOOLS</a>
         </li>
       </ul>
     </div>
@@ -57,7 +60,7 @@
     <!----------------Profile Header-------------->
     <header class="row align-items-center justify-content-center">
       <div class="col-sm-5 text-center p-md-4">
-        <img class="img-fluid animated slideInLeft" src="assets/images/Profile Pic.webp" alt="Tracy Profile Picture">
+        <img class="img-fluid animated slideInLeft" src="assets/images/Profile Pic1.png" alt="Tracy Profile Picture">
       </div>
       <div class="col-sm-5">
         <h3 id="welcome">Hello!</h3>
@@ -79,8 +82,24 @@
 
   <!------------Footer: copyright and social links------------->
   <footer class="page-footer fixed-bottom bg-white">
-    <div class="footer-copyright text-center">
-      <p class="text-secondary-50 pt-3">Copyright &copy;</p>
+    <div class="footer-copyright container-fluid">
+      <div class="row p-2 mx-md-2">
+        <section class="col-6">
+          <a class="mr-md-5 mr-3" href="https://www.linkedin.com/in/tracy-t-nguyen/" title="linkedin" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin fa-lg text-info"></i>
+          </a>
+          <a class="mr-md-5 mr-3" href="https://twitter.com/tracy_ttn" title="twitter" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter fa-lg text-info"></i>
+          </a>
+          <a href="https://github.com/tracytn0411" title="github" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github fa-lg text-info"></i>
+        </a>
+        </section>
+        <section class="col-6 text-right">
+          <small class="text-secondary-50 text-muted text-monospace pt-3">TRACY NGUYEN &copy; 2019.  ALL RIGHTS RESERVED.</small>
+        </section>
+      </div>
+     
     </div>
   </footer>
 
