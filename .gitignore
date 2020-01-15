@@ -3,6 +3,7 @@
 node_modules
 assets/extra
 assets/sass
+assets/npm_packages
 assets/css/tracy.css.map
 
 gulpfile.js

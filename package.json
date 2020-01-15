@@ -1,8 +1,8 @@
 {
   "name": "my-portfolio-traCySS",
   "version": "1.0.0",
-  "description": "my portfolio website in trial",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,15 +17,15 @@
     "url": "https://github.com/tracytn0411/my-portfolio-traCySS/issues"
   },
   "homepage": "https://github.com/tracytn0411/my-portfolio-traCySS#readme",
-  "dependencies": {
-    "bootstrap": "^4.3.1",
+  "devDependencies": {
+    "animate-sass": "^0.8.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
   },
-  "devDependencies": {
-    "animate-sass": "^0.8.2",
-    "critical": "^1.3.6",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1"
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.3.1"
   }
 }
