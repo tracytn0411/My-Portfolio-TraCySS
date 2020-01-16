@@ -20,7 +20,7 @@
   "devDependencies": {
     "animate-sass": "^0.8.2",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.0",
+    "gulp-autoprefixer": "^7.0.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
   },
