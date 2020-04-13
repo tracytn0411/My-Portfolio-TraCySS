@@ -21,7 +21,7 @@
     "animate-sass": "^0.8.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.15.0"
   },
   "dependencies": {
